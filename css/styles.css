@@ -210,7 +210,7 @@ OUR FEATURES SECTION
 }
 
 .features-list .list-item {
-  width: 270px;
+  flex-basis: calc(100%/4);
   /* flex-basis: calc((var(--container-width)-30px) / 4); Почему не работает?*/
 }
 
