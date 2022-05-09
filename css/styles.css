@@ -96,6 +96,13 @@ img {
   margin: -1px;
 }
 
+.features-list .list-item:not(:last-child),
+.our-work-list .list-item:not(:last-child),
+.member-list .list-item:not(:last-child),
+.list-of-cards .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /**
 --------------------
 HEADER SECTION
@@ -188,6 +195,7 @@ HERO SECTION
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+
   border-radius: 4px;
   border: 0;
 
@@ -210,18 +218,15 @@ OUR FEATURES SECTION
 }
 
 .features-list .list-item {
-  flex-basis: calc(100%/4);
+  flex-basis: calc(100% / 4);
   /* flex-basis: calc((var(--container-width)-30px) / 4); Почему не работает?*/
-}
-
-.list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features-subtitle {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
+
   margin-bottom: 10px;
 }
 
@@ -247,15 +252,16 @@ OUR TEAM SECTION
   background-color: var(--secondary-background-color);
 }
 
-.member-area{
+.member-area {
   width: 270px;
   border: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
   border-top: 0;
   text-align: center;
-  padding: 30px 0;
   background-color: var(--white-color);
   line-height: 1.19;
+  
+  padding: 30px 0;
 }
 .member-name {
   font-size: 16px;
@@ -276,10 +282,9 @@ OUR TEAM SECTION
   font-weight: 400;
 }
 
-.member {
-
+.member-list .list-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /**
@@ -287,7 +292,7 @@ OUR TEAM SECTION
 PORTFOLIO-CARDS SECTION
 -------------------- */
 
-.card-filter.section {
+.card-filter {
   padding-bottom: 50px;
 }
 
@@ -321,30 +326,23 @@ PORTFOLIO-CARDS SECTION
 }
 
 .list-of-cards,
-.list-of-cards.list-item
- {
+.list-of-cards.list-item {
   display: flex;
   flex-wrap: wrap;
 }
 
-.cards {
-  padding-top: 0;
-
-}
 .list-of-cards .list-item {
   width: 370px;
   height: 404px;
   background: var(--white-color);
-  
   margin-bottom: 30px;
 }
 
-.card-description-area{
-    width: 370px;
-    border: 1px solid #eeeeee;
-    border-top: 0;
-    padding: 20px 24px;
-
+.card-description-area {
+  width: 370px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  padding: 20px 24px;
 }
 
 .list-of-cards .list-item:nth-child(3n) {
@@ -367,7 +365,6 @@ PORTFOLIO-CARDS SECTION
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
-
 }
 
 /**
@@ -384,7 +381,7 @@ FOOTER SECTION
   padding-bottom: 60px;
 }
 .footer-section .logo,
-address>.link {
+address > .link {
   display: flex;
 }
 
@@ -404,10 +401,9 @@ address>.link {
   margin-bottom: 9px;
 }
 
-
 .footer-section .logo {
   margin: 0;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .logo-in-footer {
